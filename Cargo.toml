@@ -1,0 +1,12 @@
+[package]
+name = "solana-hello-world"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-program = "1.17.0"
+arrayref = "0.3.7"
+spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
+
+[lib]
+crate-type = ["cdylib", "rlib"]
