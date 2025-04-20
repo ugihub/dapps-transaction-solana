@@ -33,7 +33,7 @@ Aplikasi ini adalah Decentralized Application (DApp) berbasis Solana blockchain 
 1. Pastikan Anda telah menginstal [Node.js](https://nodejs.org/) dan npm/yarn di komputer Anda.
 2. Unduh atau clone repository ini:
    ```bash
-   git clone https://github.com/[username]/solana-token-transfer-dapp.git
+   git clone https://github.com/ugihub/dapps-transaction-solana.git
    cd solana-token-transfer-dapp
    ```
 
@@ -69,7 +69,7 @@ Berikut adalah daftar prompt terminal yang mungkin Anda gunakan selama proses in
 
 ### **1. Clone Repository**
 ```bash
-git clone https://github.com/ugihub/solana-token-transfer-dapp.git
+git clone https://github.com/ugihub/dapps-transaction-solana.git
 cd solana-token-transfer-dapp
 ```
 
