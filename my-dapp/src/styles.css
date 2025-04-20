@@ -1,0 +1,224 @@
+/* styles.css */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Hitam gelap */
+  color: #ffffff; /* Putih */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto; /* Memungkinkan scroll jika konten melebihi viewport */
+}
+
+#app-container {
+  background-color: #1e1e1e; /* Hitam lebih terang */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #007bff; /* Biru muda */
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  color: #ffffff; /* Putih */
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 2rem);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #007bff; /* Biru muda */
+  border-radius: 5px;
+  background-color: #282828; /* Hitam lebih gelap */
+  color: #ffffff; /* Putih */
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #0056b3; /* Biru tua */
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Biru muda */
+  color: #ffffff; /* Putih */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #6c757d; /* Abu-abu */
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3; /* Biru tua */
+}
+
+p {
+  margin-top: 1rem;
+  color: #007bff; /* Biru muda */
+  font-size: 1rem;
+}
+
+a {
+  color: #007bff; /* Biru muda */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+select {
+  width: calc(100% - 2rem);
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #007bff; /* Biru muda */
+  border-radius: 5px;
+  background-color: #282828; /* Hitam lebih gelap */
+  color: #ffffff; /* Putih */
+  font-size: 1rem;
+  appearance: none; /* Menghapus styling default select */
+  background-color: #0056b3;
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 16px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+select:focus {
+  border-color: #0056b3; /* Biru tua */
+  outline: none;
+}
+
+/* Gaya untuk WalletMultiButton */
+.wallet-adapter-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #007bff; /* Biru muda */
+  border-radius: 5px;
+  background-color: #007bff; /* Biru muda */
+  color: #ffffff; /* Putih */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #0056b3; /* Biru tua */
+}
+
+/* Gaya untuk WalletModal */
+.wallet-adapter-modal {
+  background-color: #1e1e1e; /* Hitam lebih terang */
+  color: #ffffff; /* Putih */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  margin: 2rem;
+  position: relative;
+}
+
+.wallet-adapter-modal-header {
+  background-color: #121212; /* Hitam gelap */
+  color: #ffffff; /* Putih */
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.wallet-adapter-modal-body {
+  padding: 1rem;
+}
+
+.wallet-adapter-modal-footer {
+  background-color: #121212; /* Hitam gelap */
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.wallet-adapter-modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #ffffff; /* Putih */
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.wallet-adapter-modal-close-button:hover {
+  color: #0056b3; /* Biru tua */
+}
+
+.wallet-adapter-modal-list {
+  list-style: none;
+  padding: 0;
+}
+
+.wallet-adapter-modal-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.wallet-adapter-modal-list-item-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #007bff; /* Biru muda */
+  border-radius: 5px;
+  background-color: #007bff; /* Biru muda */
+  color: #ffffff; /* Putih */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wallet-adapter-modal-list-item-button:hover {
+  background-color: #0056b3; /* Biru tua */
+}
+
+/* Gaya untuk ID Transaksi */
+.transaction-id {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ffffff; /* Putih */
+  word-break: break-all; /* Memecah teks panjang */
+}
+
+.transaction-id a {
+  color: #007bff; /* Biru muda */
+  font-weight: bold;
+}
+
+.transaction-id a:hover {
+  text-decoration: underline;
+}
